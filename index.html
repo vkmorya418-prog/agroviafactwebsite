@@ -26,7 +26,7 @@
                                 <ul className="flex space-x-6 font-semibold">
                                     <li><a href="#" className="hover:text-green-200">होम</a></li>
                                     <li><a href="#" className="hover:text-green-200">कृषि तथ्य</a></li>
-                                    <li><a href="#" className="hover:text-green-200">उत्पाद</a></li>
+                                    <li><a href="#" className="hover:text-green-200">अनुशंसित उत्पाद</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -35,42 +35,40 @@
                     {/* Hero Section */}
                     <section className="bg-green-600 text-white py-12 px-4 text-center shadow-inner">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">भारतीय किसानों और छात्रों के लिए कृषि ज्ञान</h2>
-                        <p className="mb-6 text-lg md:text-xl text-green-100">सही जानकारी, उन्नत खेती और बेहतरीन कृषि उत्पाद</p>
+                        <p className="mb-6 text-lg md:text-xl text-green-100">खेती के रोचक तथ्य, फसल की जानकारी और बेहतरीन कृषि उत्पाद</p>
                         <input 
                             type="text" 
-                            placeholder="विषय खोजें..." 
+                            placeholder="कृषि जानकारी खोजें..." 
                             className="px-4 py-2 w-3/4 md:w-1/2 text-black rounded shadow-md focus:outline-none focus:ring-2 focus:ring-green-400"
                         />
                     </section>
 
-                    {/* Content Area */}
+                    {/* Content Area - Agrovia Facts */}
                     <main className="container mx-auto p-4 mt-6">
-                        <h3 className="text-2xl font-bold border-b-4 border-green-600 pb-2 mb-6 text-green-900">नवीनतम लेख (Sample)</h3>
+                        <h3 className="text-2xl font-bold border-b-4 border-green-600 pb-2 mb-6 text-green-900">आज के कृषि तथ्य (AGROVIA FACTS)</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             
-                            {/* Article 1 */}
+                            {/* Fact 1 */}
                             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-green-100">
-                                <div className="bg-green-200 h-40 flex items-center justify-center">
-                                    <span className="text-green-700 font-bold">[खेती की फोटो]</span>
+                                <div className="bg-green-100 h-32 flex items-center justify-center text-4xl">
+                                    🍅
                                 </div>
                                 <div className="p-4">
-                                    <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Crop Production</span>
-                                    <h4 className="font-bold text-lg text-gray-900 mt-2">गेहूं की उन्नत खेती कैसे करें?</h4>
-                                    <p className="text-sm mt-2 text-gray-600">मिट्टी की तैयारी से लेकर कटाई तक की पूरी जानकारी। सही बीज और खाद का चुनाव...</p>
-                                    <button className="mt-4 text-green-700 font-bold hover:underline">पूरा पढ़ें &rarr;</button>
+                                    <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">रोचक तथ्य</span>
+                                    <h4 className="font-bold text-lg text-gray-900 mt-2">टमाटर सब्जी है या फल?</h4>
+                                    <p className="text-sm mt-2 text-gray-600">वैज्ञानिक दृष्टि से टमाटर एक फल (Fruit) है, क्योंकि इसमें बीज होते हैं और यह फूल से विकसित होता है। लेकिन रसोई में इसे सब्जी माना जाता है!</p>
                                 </div>
                             </div>
 
-                            {/* Article 2 */}
+                            {/* Fact 2 */}
                             <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-green-100">
-                                <div className="bg-green-200 h-40 flex items-center justify-center">
-                                    <span className="text-green-700 font-bold">[खाद की फोटो]</span>
+                                <div className="bg-green-100 h-32 flex items-center justify-center text-4xl">
+                                    🌱
                                 </div>
                                 <div className="p-4">
-                                    <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Fertilizers</span>
-                                    <h4 className="font-bold text-lg text-gray-900 mt-2">जैविक खाद के फायदे</h4>
-                                    <p className="text-sm mt-2 text-gray-600">रासायनिक खादों के नुकसान और जैविक खेती से मिट्टी की उर्वरकता बढ़ाने के तरीके...</p>
-                                    <button className="mt-4 text-green-700 font-bold hover:underline">पूरा पढ़ें &rarr;</button>
+                                    <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">फसल ज्ञान</span>
+                                    <h4 className="font-bold text-lg text-gray-900 mt-2">मिट्टी की जाँच क्यों है ज़रूरी?</h4>
+                                    <p className="text-sm mt-2 text-gray-600">मिट्टी परीक्षण से पता चलता है कि खेत में किस पोषक तत्व की कमी है। इससे खाद का सही उपयोग होता है और फसल की पैदावार 20% तक बढ़ सकती है।</p>
                                 </div>
                             </div>
 
@@ -80,29 +78,37 @@
                     {/* Affiliate / Recommended Products Section */}
                     <section className="bg-gray-100 py-10 px-4 mt-8">
                         <div className="container mx-auto">
-                            <h3 className="text-2xl font-bold border-b-4 border-green-600 pb-2 mb-6 text-green-900">अनुशंसित कृषि उत्पाद (Affiliate)</h3>
+                            <h3 className="text-2xl font-bold border-b-4 border-green-600 pb-2 mb-6 text-green-900">अनुशंसित कृषि उत्पाद (Buy Online)</h3>
+                            
                             <div className="bg-white p-4 rounded shadow border border-gray-200 flex flex-col md:flex-row items-center gap-4">
-                                <div className="w-full md:w-1/4 bg-gray-200 h-32 flex items-center justify-center rounded">
-                                    <span className="text-gray-500">[Product Image]</span>
+                                <div className="w-full md:w-1/4 bg-green-50 h-32 flex items-center justify-center rounded text-5xl">
+                                    🔋
                                 </div>
                                 <div className="w-full md:w-3/4">
-                                    <h4 className="font-bold text-xl text-gray-800">कृषि स्प्रेयर पंप (Sample Product)</h4>
-                                    <p className="text-sm text-gray-600 mt-2">खेतों में दवा छिड़कने के लिए बेहतरीन बैटरी वाला स्प्रेयर। (यह एक सैंपल एफिलिएट लिंक है)</p>
-                                    <p className="text-xs text-gray-400 mt-1">*Affiliate Disclosure: इस लिंक से खरीदने पर हमें छोटा कमीशन मिल सकता है।*</p>
-                                    <button className="mt-4 bg-green-600 text-white font-bold py-2 px-4 rounded hover:bg-green-700">
-                                        Amazon पर देखें
-                                    </button>
+                                    <span className="text-xs font-bold text-red-500 mb-1 block">Best Seller</span>
+                                    <h4 className="font-bold text-xl text-gray-800">16 लीटर बैटरी वाला कृषि स्प्रेयर (Battery Sprayer)</h4>
+                                    <p className="text-sm text-gray-600 mt-2">खेतों में कीटनाशक और खाद छिड़कने के लिए सबसे अच्छा बैटरी वाला स्प्रेयर। एक बार चार्ज करने पर घंटों काम करता है।</p>
+                                    
+                                    {/* Affiliate Link Example */}
+                                    <div className="mt-4 flex items-center gap-4">
+                                        <a href="https://amzn.to/YOUR_AFFILIATE_LINK" target="_blank" className="bg-orange-500 text-white font-bold py-2 px-6 rounded shadow hover:bg-orange-600 transition">
+                                            Amazon से खरीदें
+                                        </a>
+                                        <span className="text-lg font-bold text-green-700">₹2,200*</span>
+                                    </div>
+                                    <p className="text-xs text-gray-400 mt-2">*Affiliate Disclosure: ऊपर दिए गए लिंक से खरीदारी करने पर AGROVIA FACT को एक छोटा कमीशन मिल सकता है, जिससे पेज को सपोर्ट मिलता है।*</p>
                                 </div>
                             </div>
+
                         </div>
                     </section>
                     
                     {/* Footer */}
                     <footer className="bg-gray-900 text-gray-300 text-center p-6 mt-12">
-                        <div className="mb-4 space-x-4">
-                            <a href="#" className="hover:text-white">About Us</a> | 
-                            <a href="#" className="hover:text-white">Contact</a> | 
-                            <a href="#" className="hover:text-white">Privacy Policy</a>
+                        <div className="mb-4 space-x-4 font-semibold">
+                            <a href="#" className="hover:text-green-400">हमारे बारे में (About Us)</a> | 
+                            <a href="#" className="hover:text-green-400">संपर्क करें (Contact)</a> | 
+                            <a href="#" className="hover:text-green-400">Privacy Policy</a>
                         </div>
                         <p>&copy; 2026 AGROVIA FACT. सर्वाधिकार सुरक्षित।</p>
                     </footer>
